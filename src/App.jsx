@@ -1,17 +1,16 @@
 import "./App.css";
 import Login from "./Components/Login";
 import Profile from "./Components/Profile";
-import UserContextprovider from "./Context/UserContextprovider";
+import UserContextProvider from "./Context/UserContextProvider";
 
-const App = () => {
+function App() {
   return (
-    <UserContextprovider>
-      <h1>React Login Form Context API </h1>
+    <UserContextProvider>
+      <h1>React with Chai and Share is Important</h1>
       <Login />
-       
       <Profile />
-    </UserContextprovider>
+    </UserContextProvider>
   );
-};
+}
 
 export default App;
